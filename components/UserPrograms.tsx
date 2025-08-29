@@ -3,12 +3,12 @@ import { Button } from '@/components/ui/button';
 import {
 	Card,
 	CardContent,
-	// CardFooter,
+	CardFooter,
 	CardHeader,
 	CardTitle
 } from '@/components/ui/card';
 import {
-	// ChevronRight,
+	ChevronRight,
 	Dumbbell,
 	Sparkles,
 	Users,
@@ -181,7 +181,7 @@ export const UserProgramCard = ({ program }: { program: Program }) => {
 			<CardHeader className="pt-6 px-5">
 				<div className="flex items-center gap-4 mb-4">
 					<div className="h-16 w-16 rounded-full overflow-hidden border border-border">
-						{/* eslint-disable-next-line @next/next/no-img-element */}
+						{}
 						<img
 							src={program.profilePic}
 							alt={`${program.first_name}`}
@@ -297,7 +297,7 @@ export const UserProgramCard = ({ program }: { program: Program }) => {
 				</div>
 			</CardContent>
 
-			{/* <CardFooter className="px-5 py-4 border-t border-border">
+			<CardFooter className="px-5 py-4 border-t border-border">
 				<Link
 					href={`/programs/${program.id}`}
 					className="w-full"
@@ -307,7 +307,7 @@ export const UserProgramCard = ({ program }: { program: Program }) => {
 						<ChevronRight className="ml-2 h-4 w-4" />
 					</Button>
 				</Link>
-			</CardFooter> */}
+			</CardFooter>
 		</Card>
 	);
 };

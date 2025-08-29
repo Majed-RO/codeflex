@@ -1,4 +1,3 @@
-
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -155,7 +154,7 @@ const GenerateProgramPage = () => {
 						? user.username
 						: 'There';
 
-        // if you want to call the assistant directly
+				// if you want to call the assistant directly
 				/* await vapi.start( 
 					process.env
 						.NEXT_PUBLIC_VAPI_ASSISTANT_ID,
@@ -167,9 +166,11 @@ const GenerateProgramPage = () => {
 					}
 				); */
 
-        // if you want to call the workflow directly -- with some hack
-        await vapi.start( 
-          undefined, undefined,undefined,
+				// if you want to call the workflow directly -- with some hack
+				await vapi.start(
+					undefined,
+					undefined,
+					undefined,
 					process.env
 						.NEXT_PUBLIC_VAPI_WORKFLOW_ID!,
 					{
@@ -179,8 +180,6 @@ const GenerateProgramPage = () => {
 						}
 					}
 				);
-
-        
 			} catch (error) {
 				console.log('Failed to start call', error);
 				setConnecting(false);
