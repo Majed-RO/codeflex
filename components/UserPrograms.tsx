@@ -3,12 +3,12 @@ import { Button } from '@/components/ui/button';
 import {
 	Card,
 	CardContent,
-	CardFooter,
+	// CardFooter,
 	CardHeader,
 	CardTitle
 } from '@/components/ui/card';
 import {
-	ChevronRight,
+	// ChevronRight,
 	Dumbbell,
 	Sparkles,
 	Users,
@@ -297,7 +297,7 @@ export const UserProgramCard = ({ program }: { program: Program }) => {
 				</div>
 			</CardContent>
 
-			<CardFooter className="px-5 py-4 border-t border-border">
+			{/* <CardFooter className="px-5 py-4 border-t border-border">
 				<Link
 					href={`/programs/${program.id}`}
 					className="w-full"
@@ -307,7 +307,7 @@ export const UserProgramCard = ({ program }: { program: Program }) => {
 						<ChevronRight className="ml-2 h-4 w-4" />
 					</Button>
 				</Link>
-			</CardFooter>
+			</CardFooter> */}
 		</Card>
 	);
 };

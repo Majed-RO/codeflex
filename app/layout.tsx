@@ -31,23 +31,21 @@ export default function RootLayout({
 	return (
 		//  <ClerkProvider>
 		<ConvexClerkProvider>
-			<html lang="en">
+			<html lang="en" className="">
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 				>
-          <div className='px-4'>
-
-					<Navbar />
-					<div className="fixed inset-0 -z-1">
-						<div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background"></div>
-						<div className="absolute inset-0 bg-[linear-gradient(var(--cyber-grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--cyber-grid-color)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+					<div className="px-4 flex flex-col h-screen">
+						<Navbar />
+						<div className="fixed inset-0 -z-1">
+							<div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background"></div>
+							<div className="absolute inset-0 bg-[linear-gradient(var(--cyber-grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--cyber-grid-color)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+						</div>
+						<main className="pt-24 flex-grow">
+							{children}
+						</main>
+						<Footer />
 					</div>
-					<main className="pt-24 flex-grow">
-						{children}
-					</main>
-					<Footer />
-          </div>
-
 				</body>
 			</html>
 		</ConvexClerkProvider>
