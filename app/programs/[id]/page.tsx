@@ -16,9 +16,7 @@ import Link from 'next/link';
 import { USER_PROGRAMS } from '@/constants';
 
 interface ProgramDetailsPageProps {
-	params: {
-		id: string;
-	};
+	params: Promise<{ id: string }>;
 }
 
 const ProgramDetailsPage = async ({ params }: ProgramDetailsPageProps) => {
